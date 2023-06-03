@@ -1,6 +1,12 @@
+
+
 h2 {
     font-family: "Courier New", monospace;
     font-size: smaller;
+}
+body {
+  max-width: 960px;
+  margin: auto;
 }
 .row-grid {
     display: flex;
@@ -20,10 +26,10 @@ h2 {
     align-content: stretch;
     margin: 1%;
     border: 1pt solid black;
-    overflow: hidden;
     border-radius: 10px;
-    flex-grow: 1;
+    flex-grow: 0;
     padding-bottom: 1em;
+    
      
     
 }
@@ -38,25 +44,25 @@ h2 {
   
   .col-grid {
     display: flex;
-    flex-direction:column;
-    flex-flow: row; 
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-flow: column wrap;
+    height: 100em;
+    
+    
   }
   
   .col-grid div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100px;
-    height: 100px;
-    flex: 1 0 auto;
-    align-content: stretch;
+    /* width: 100px; */
+    height: auto;
     margin: 1%;
     border: 1pt solid black;
     overflow: hidden;
     border-radius: 10px; 
     text-align: center;
+    flex:auto 0 calc(33.3%);
+    
+    
 }
 .col-grid div img {
   height: 90%;
